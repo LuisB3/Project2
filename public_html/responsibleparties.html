@@ -1,10 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Important People</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<div class="container">
+    <h2 style="font-family: Impact; letter-spacing: 5px;">Important People</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Learn More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="about.html">About Us</a>
+                        <a class="dropdown-item" href="theory.html">Theory of the Net</a>
+                        <a class="dropdown-item" href="technologies.html">Invention of the Technologies</a>
+                        <a class="dropdown-item" href="earlynet.html">Early Internet</a>
+                        <a class="dropdown-item" href="advancement.html">Advancement of the Net</a>
+                        <a class="dropdown-item" href="responsibleparties.html">Important People</a>
+                        <a class="dropdown-item" href="growth.html">Growth of the Internet</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <p>
+    <ul>
+        <li><span><b>Dr. Paul Baran</b></span> was hired by the government to figure out the problem at hand.</li>
+        <li>Baran and his team started with trying to find a way to make sure data always made it to where it needed to get to even with disruption or being destroyed.</li>
+        <li>Baran created the <span><b>“Hot Potato Routing”</b></span> meant a message transiting a network got to where it was going even if part of a network was destroyed.</li>
+        <li>Baran was inspired by <span><b>Claude Shannon’s 1953 mouse in a maze model</b></span>. He believed if we could model a mouse going through a maze, we should be able to model same for information. The information flows along in each of the packets that’s necessary to find its way through the network, such like mice in a maze finding their way.</li>
+        <li>From this idea, Baran also included the methodology of the telegraph for this idea – Baran decided to chop up each message into small equal sized pieces (packets). Each <span><b>packet</b></span> has a “to” and “from” address. Once a header has been put on a packet indicating where the packet is to go, the packet goes through the network with the other packets following behind. The packets find their way through paths that are available to get to where they need to go.</li>
+        <li>Baran then decided to let a node decide where to send each packet while going through the network on its way to the recipient.</li>
+        <li>A node would keep copies of the packets and keep sending packets out until it reached its destination. This process was called <span><b>network switching</b></span>.</li>
+        <li>Network switching became better than the telephone system because information always got through as long as a part of the network functioned.</li>
+    </ul>
+    </p>
+
+    <img src="Images/network.jpg" alt="network"; style="align-content: center; width: 800px"; height="400px"/>
+
+    <p>
+    <ul>
+        <li>1966 – <span><b>Bob Taylor</b></span>, ARPA Scientist needed a separate terminal to log onto each time-shared computer across the country. Since no 2 computers could communicate with each other, Taylor had to move through each terminal. He figured a single terminal would be better if it could communicate with all the computers at once instead through one network.</li>
+        <li>Taylor asked for money to build a computer network – “resource sharing” to save time and money for ARPA.</li>
+        <li>Taylor recruited <span><b>Dr. Lawrence (Larry) Roberts</b></span>, to help with his project. Roberts had built the world’s first experimental connections between 2 computers at MIT.</li>
+        <li>Robert had to figure out how to network main frame computers.</li>
+        <li>An engineer inspired Larry by suggesting building identical special purposes mini computers to form the network and tie each time-shared computer to them.</li>
+
+
+
+    </ul>
+    </p>
+
+</div>
+</div>
+<!-- Footer -->
+<footer>
+    <p class="text-center"> <a class="footer-repo" href="https://github.com/LuisB3/History_of_the_Internet/tree/InternetHiistoryMerged" target="_blank" title="My git repository">Git Repo | </a>
+        <a class="footer-report" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhistoryofinternetwebsitetg.eastus.azurecontainer.io%2FdotComBubble.html" target="_blank" title="W3C Validator report"> W3C Report | </a>
+        Luis Bastidas-Sandra Veziroglu-IS601 &#169;
+    </p>
+
+</footer>
+
 
 </body>
 </html>
